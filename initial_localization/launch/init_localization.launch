@@ -1,0 +1,13 @@
+<launch>
+ 
+  <!-- Load recorded map -->
+  <!--<node name="set_map" pkg="initial_localization" type="initial_localization" args="$(find tas)/launch/config/map_server/LSR_3.yaml"/>-->
+
+   <!-- Start Global_Localization Service-->
+  <node pkg="rosservice" type="rosservice" name="global_loc" args="call --wait /global_localization"></node>
+
+   <!-- Move car around to get pose estimate-->
+   <node pkg="initial_localization" type="initial_localization" name="move_car"></node>
+
+
+</launch>

@@ -1,3 +1,8 @@
+
+<!--	Launch global Localization and start to move car -->
+<!--	authors: Peter Leidl, Dominik Mücke-->
+
+
 <launch>
  
   <!-- Load recorded map -->
@@ -7,7 +12,7 @@
   <node pkg="rosservice" type="rosservice" name="global_loc" args="call --wait /global_localization"></node>
 
    <!-- Move car around to get pose estimate-->
-   <node pkg="initial_localization" type="initial_localization" name="move_car"></node>
+   <node pkg="initial_localization" type="move_car" name="move_car"></node>
 
 
 </launch>

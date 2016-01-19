@@ -34,7 +34,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: LaserScan
 Visualization Manager:
   Class: ""
   Displays:
@@ -98,13 +98,32 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        base_imu:
+          Value: true
+        base_link:
+          Value: true
+        laser:
+          Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
+        scanmatcher_frame:
+          Value: true
       Marker Scale: 2
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        {}
+        map:
+          odom:
+            scanmatcher_frame:
+              base_link:
+                base_imu:
+                  {}
+                laser:
+                  {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -112,7 +131,13 @@ Visualization Manager:
       Class: rviz/Path
       Color: 25; 255; 0
       Enabled: true
+      Line Style: Lines
+      Line Width: 0.03
       Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
       Topic: /move_base_node/NavfnROS/plan
       Value: true
     - Alpha: 1
@@ -120,7 +145,13 @@ Visualization Manager:
       Class: rviz/Path
       Color: 25; 255; 0
       Enabled: true
+      Line Style: Lines
+      Line Width: 0.03
       Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
       Topic: /move_base_node/TrajectoryPlannerROS/global_plan
       Value: true
     - Alpha: 1
@@ -128,7 +159,13 @@ Visualization Manager:
       Class: rviz/Path
       Color: 0; 0; 255
       Enabled: true
+      Line Style: Lines
+      Line Width: 0.03
       Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
       Topic: /move_base_node/TrajectoryPlannerROS/local_plan
       Value: true
     - Arrow Length: 0.05
@@ -162,16 +199,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 42.9695
+      Distance: 18.8304
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 17.387
-        Y: 10.7762
-        Z: -8.17145
+        X: 1.39184
+        Y: -0.655063
+        Z: -8.1842
       Name: Current View
       Near Clip Distance: 0.01
       Pitch: 1.5698
@@ -195,5 +232,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1375
-  X: 65
-  Y: 24
+  X: 55
+  Y: 14

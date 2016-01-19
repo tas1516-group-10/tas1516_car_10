@@ -1,0 +1,123 @@
+Punkt 1 (Mitte Tutorlabor)
+    pose: 
+      position: 
+        x: 4.78069210052
+        y: -0.0659713745117
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.00638914866054
+        w: 0.999979589181
+
+
+Punkt 2 (vor Kurve)
+    pose: 
+      position: 
+        x: 10.1456050873
+        y: -0.263573169708
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.000334157606055
+        w: 0.999999944169
+
+Punkt 3 (nach Kurve bei ehem. Startpunkt)
+    pose: 
+      position: 
+        x: 10.1456050873
+        y: -0.263573169708
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.000334157606055
+        w: 0.999999944169
+
+Punkt 4 (vor ehm. erster Kurve)
+    pose: 
+      position: 
+        x: 10.1456050873
+        y: -0.263573169708
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.000334157606055
+        w: 0.999999944169
+
+Punkt 5 (Nach ehm. erster Kurve bei den Schreibtischen)
+    pose: 
+      position: 
+        x: 9.98787784576
+        y: 13.0794792175
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.999968792519
+        w: 0.00790025239718
+
+Punkt 6 (Vor der engsten Kurve)
+    pose: 
+      position: 
+        x: 3.4828555584
+        y: 13.0072402954
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.999888155536
+        w: 0.0149558155386
+
+Punkt 7 (nach engster Kurve)
+    pose: 
+      position: 
+        x: -0.411442756653
+        y: 9.79710483551
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.693034263807
+        w: 0.720904646392
+
+Punkt 8 (Startposition, schaut aber zum Drucker hinter(Sackgasse))
+    pose: 
+      position: 
+        x: -0.0261330604553
+        y: 0.0563100576401
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.696654571148
+        w: 0.717406724598
+
+Punkt 8 (Alternativ, schaut in nachsten Raum (konnte weiterfahren))
+    pose: 
+      position: 
+        x: 2.07394552231
+        y: -0.355675816536
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: 0.00469572933264
+        w: 0.999988975002
+
+Punkt 8 (Alternative, nicht ganz bis yum Ziel)
+    pose: 
+      position: 
+        x: -0.0496511459351
+        y: 1.67589426041
+        z: 0.0
+      orientation: 
+        x: 0.0
+        y: 0.0
+        z: -0.700857910806
+        w: 0.713300910459
+
+
+

@@ -34,21 +34,21 @@ void scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan_msg){
   //Correction of angular velocity
   move_cmd.angular.x = 0;
   move_cmd.angular.y = 0;
-  move_cmd.angular.z = 0.31;
+  move_cmd.angular.z = 0;
  
   pub_movement.publish(move_cmd);
  
   loop_rate.sleep();
  
   //Velocity command
-  move_cmd1.linear.x = -1;
+  move_cmd1.linear.x = -0.5;
   move_cmd1.linear.y = 0;
   move_cmd1.linear.z = 0;
 
   //Correction of angular velocity
   move_cmd1.angular.x = 0;
   move_cmd1.angular.y = 0;
-  move_cmd1.angular.z = -0.2;
+  move_cmd1.angular.z = 0;
  
   pub_movement.publish(move_cmd1);
  

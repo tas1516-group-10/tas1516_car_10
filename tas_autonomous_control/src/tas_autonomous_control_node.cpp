@@ -80,12 +80,12 @@ int main(int argc, char** argv)
                 else if(check_dist == 1)
                 {
                     ROS_INFO("Distance between 1 and 2 meters in front of the car!");
-                    autonomous_control.control_servo.x = 1550;
+                    autonomous_control.control_servo.x = 1545;
                 }
                 else if(check_dist == 2)
                 {
                     ROS_INFO("Dsiatnce between 0.2 and 1 meters in front of the car!");
-                    autonomous_control.control_servo.x = 1530;
+                    autonomous_control.control_servo.x = 1540;
                 }
                 else if(check_dist == 3)
                 {
@@ -96,7 +96,7 @@ int main(int argc, char** argv)
                 if(autonomous_control.cmd_linearVelocity < 0)
 		{
 		    ROS_INFO("Driving backwards");
-                    autonomous_control.control_servo.x = 1300;
+                    autonomous_control.control_servo.x = 1250;
                 }
 
                 else if(autonomous_control.cmd_linearVelocity == 0)

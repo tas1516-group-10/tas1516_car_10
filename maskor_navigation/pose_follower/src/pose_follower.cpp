@@ -54,8 +54,8 @@ namespace pose_follower {
     node_private.param("k_trans", K_trans_, 3.0);
     node_private.param("k_rot", K_rot_, 3.0);
 
-    node_private.param("tolerance_trans", tolerance_trans_, 0.30);
-    node_private.param("tolerance_rot", tolerance_rot_, 0.30);
+    node_private.param("tolerance_trans", tolerance_trans_, 0.35);	// War 0.3 geändert 20.1. CPF
+    node_private.param("tolerance_rot", tolerance_rot_, 1.50);		// War 0.3 geändert 20.1. CPF
     node_private.param("tolerance_timeout", tolerance_timeout_, 1.5);
 
     node_private.param("holonomic", holonomic_, false);

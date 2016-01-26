@@ -41,94 +41,61 @@ int main(int argc, char** argv){
     std::vector<geometry_msgs::Pose> waypoints; // vector of goals, with position and orientation
 
     geometry_msgs::Pose waypoint1;
-    waypoint1.position.x = -0.0680644512177;
-    waypoint1.position.y = 12.4799041748;
+    waypoint1.position.x = 1.49577414989;
+    waypoint1.position.y = 0.333899021149;
     waypoint1.position.z = 0.000;
     waypoint1.orientation.x = 0.000;
     waypoint1.orientation.y = 0.000;
-    waypoint1.orientation.z = -0.0402670559068;
-    waypoint1.orientation.w = 0.999188953206;
+    waypoint1.orientation.z = 3.49849127564e-07;
+    waypoint1.orientation.w = 1.0;
     waypoints.push_back(waypoint1);
 
+
     geometry_msgs::Pose waypoint2;
-    waypoint2.position.x = 1.38289213181;
-    waypoint2.position.y = 12.9106273651;
+    waypoint2.position.x = 3.31786060333;
+    waypoint2.position.y = -0.32671803236;
     waypoint2.position.z = 0.000;
     waypoint2.orientation.x = 0.000;
     waypoint2.orientation.y = 0.000;
-    waypoint2.orientation.z = -0.0460160601099;
-    waypoint2.orientation.w = 0.998940700048;
+    waypoint2.orientation.z = 0.016493927318;
+    waypoint2.orientation.w = 0.999863965928;
     waypoints.push_back(waypoint2);
 
+
     geometry_msgs::Pose waypoint3;
-    waypoint3.position.x = 2.2465877533;
-    waypoint3.position.y = 12.533905983;
+    waypoint3.position.x = 4.76978874207;
+    waypoint3.position.y = 0.635363340378;
     waypoint3.position.z = 0.000;
     waypoint3.orientation.x = 0.000;
     waypoint3.orientation.y = 0.000;
-    waypoint3.orientation.z = -0.375389644785;
-    waypoint3.orientation.w = 0.926867096507;
+    waypoint3.orientation.z = -0.0182090763686;
+    waypoint3.orientation.w = 0.999834201024;
     waypoints.push_back(waypoint3);
 
     geometry_msgs::Pose waypoint4;
-    waypoint4.position.x = 3.23049879074;
-    waypoint4.position.y = 11.932179451;
+    waypoint4.position.x = 6.69356822968;
+    waypoint4.position.y = -0.23480117321;
     waypoint4.position.z = 0.000;
     waypoint4.orientation.x = 0.000;
     waypoint4.orientation.y = 0.000;
-    waypoint4.orientation.z = -0.0188119854049;
-    waypoint4.orientation.w = 0.999823038945;
+    waypoint4.orientation.z = 0.0172731922709;
+    waypoint4.orientation.w = 0.999850807285;
     waypoints.push_back(waypoint4);
 
-    geometry_msgs::Pose waypoint5;
-    waypoint5.position.x = 4.11123037338;
-    waypoint5.position.y = 12.0440406799;
-    waypoint5.position.z = 0.000;
-    waypoint5.orientation.x = 0.000;
-    waypoint5.orientation.y = 0.000;
-    waypoint5.orientation.z = 0.258324229408;
-    waypoint5.orientation.w = 0.966058275934;
-    waypoints.push_back(waypoint5);
 
-    geometry_msgs::Pose waypoint6;
-    waypoint6.position.x = 4.9279961586;
-    waypoint6.position.y = 12.4426183701;
-    waypoint6.position.z = 0.000;
-    waypoint6.orientation.x = 0.000;
-    waypoint6.orientation.y = 0.000;
-    waypoint6.orientation.z = -0.0992695562941;
-    waypoint6.orientation.w = 0.995060578655;
-    waypoints.push_back(waypoint6);
 
-    geometry_msgs::Pose waypoint7;
-    waypoint7.position.x = 5.73929691315;
-    waypoint7.position.y = 12.1841840744;
-    waypoint7.position.z = 0.000;
-    waypoint7.orientation.x = 0.000;
-    waypoint7.orientation.y = 0.000;
-    waypoint7.orientation.z = -0.350541523744;
-    waypoint7.orientation.w = 0.936547190552;
-    waypoints.push_back(waypoint7);
 
-    geometry_msgs::Pose waypoint8;
-    waypoint8.position.x = 6.51041889191;
-    waypoint8.position.y = 11.612030983;
-    waypoint8.position.z = 0.000;
-    waypoint8.orientation.x = 0.000;
-    waypoint8.orientation.y = 0.000;
-    waypoint8.orientation.z = 0.0117987942079;
-    waypoint8.orientation.w = 0.999930391805;
-    waypoints.push_back(waypoint8);
+//    geometry_msgs::Pose waypoint5;
+//    waypoint5.position.x = 8.07503700256;
+//    waypoint5.position.y = 0.0767859816551;
+//    waypoint5.position.z = 0.000;
+//    waypoint5.orientation.x = 0.000;
+//    waypoint5.orientation.y = 0.000;
+//    waypoint5.orientation.z = 0.102819700575;
+//    waypoint5.orientation.w = 0.994700009638;
+//    waypoints.push_back(waypoint5);
 
-    geometry_msgs::Pose waypoint9;
-    waypoint9.position.x = 7.59879779816;
-    waypoint9.position.y = 11.9347524643;
-    waypoint9.position.z = 0.000;
-    waypoint9.orientation.x = 0.000;
-    waypoint9.orientation.y = 0.000;
-    waypoint9.orientation.z = -0.0249440965683;
-    waypoint9.orientation.w = 0.999688847615;
-    waypoints.push_back(waypoint9);
+
 
 
 

@@ -42,27 +42,82 @@ int main(int argc, char** argv){
     ros::Rate loop_rate(0.05);
 
     std::vector<geometry_msgs::Pose> waypoints; // vector of goals, with position and orientation
- geometry_msgs::Pose waypoint1;
+
     
-     waypoint1.position.x = 12.6086778641;
-     waypoint1.position.y = 8.93620109558;
-     waypoint1.position.z = 0.000;
-     waypoint1.orientation.x = 0.000;
-     waypoint1.orientation.y = 0.000;
-     waypoint1.orientation.z = 0.70204957956;
-     waypoint1.orientation.w = 0.71212806983;
-    waypoints.push_back(waypoint1);
+ geometry_msgs::Pose waypoint2;
+ waypoint2.position.x = 10.1456050873;
+ waypoint2.position.y = -0.263573169708;
+ waypoint2.position.z = 0.000;
+ waypoint2.orientation.x = 0.000;
+ waypoint2.orientation.y = 0.000;
+ waypoint2.orientation.z = -0.000334157606055;
+ waypoint2.orientation.w = 0.999999944169;
+ waypoints.push_back(waypoint2);
 
-    geometry_msgs::Pose waypoint2;
-    waypoint2.position.x =  0.0578737258911;
-    waypoint2.position.y = 2.71165537834;
-    waypoint2.position.z = 0.000;
-    waypoint2.orientation.x = 0.000;
-    waypoint2.orientation.y = 0.000;
-    waypoint2.orientation.z = -0.715251873617;
-    waypoint2.orientation.w = 0.698866766478;
-    waypoints.push_back(waypoint2);
 
+ geometry_msgs::Pose waypoint3;
+ waypoint3.position.x = 12.9451246262;
+ waypoint3.position.y = 9.76045322418;
+ waypoint3.position.z = 0.000;
+ waypoint3.orientation.x = 0.000;
+ waypoint3.orientation.y = 0.000;
+ waypoint3.orientation.z = 0.71426517663;
+ waypoint3.orientation.w = 0.699875172765;
+ waypoints.push_back(waypoint3);
+
+
+
+
+// geometry_msgs::Pose waypoint5;
+// waypoint5.position.x = 9.98787784576;
+// waypoint5.position.y = 13.0794792175;
+// waypoint5.position.z = 0.000;
+// waypoint5.orientation.x = 0.000;
+// waypoint5.orientation.y = 0.000;
+// waypoint5.orientation.z = 0.999968792519;
+// waypoint5.orientation.w = 0.00790025239718;
+// waypoints.push_back(waypoint5);
+
+ geometry_msgs::Pose waypoint6;
+ waypoint6.position.x = 3.4828555584;
+ waypoint6.position.y = 13.0072402954;
+ waypoint6.position.z = 0.000;
+ waypoint6.orientation.x = 0.000;
+ waypoint6.orientation.y = 0.000;
+ waypoint6.orientation.z = 0.999888155536;
+ waypoint6.orientation.w = 0.0149558155386;
+ waypoints.push_back(waypoint6);
+
+// geometry_msgs::Pose waypoint7;
+// waypoint7.position.x = -0.411442756653;
+// waypoint7.position.y = 9.79710483551;
+// waypoint7.position.z = 0.000;
+// waypoint7.orientation.x = 0.000;
+// waypoint7.orientation.y = 0.000;
+// waypoint7.orientation.z = -0.693034263807;
+// waypoint7.orientation.w = 0.720904646392;
+// waypoints.push_back(waypoint7);
+
+geometry_msgs::Pose waypoint7;
+waypoint7.position.x = -0.684961080551;
+waypoint7.position.y = 9.46679496765;
+waypoint7.position.z = 0.000;
+waypoint7.orientation.x = 0.000;
+waypoint7.orientation.y = 0.000;
+waypoint7.orientation.z = -0.698141406242;
+waypoint7.orientation.w = 0.71595989894;
+waypoints.push_back(waypoint7);
+
+ //Startposition, schaut aber zum Drucker hinter (Sackgasse)
+ geometry_msgs::Pose waypoint8;
+ waypoint8.position.x = -0.0261330604553;
+ waypoint8.position.y = 0.0563100576401;
+ waypoint8.position.z = 0.000;
+ waypoint8.orientation.x = 0.000;
+ waypoint8.orientation.y = 0.000;
+ waypoint8.orientation.z = -0.696654571148;
+ waypoint8.orientation.w = 0.717406724598;
+ waypoints.push_back(waypoint8);
 
 
 
@@ -106,9 +161,9 @@ int main(int argc, char** argv){
         ROS_INFO("Sending goal");
         ac.sendGoal(goal, &doneCb, &activeCb, &feedbackCb); // send goal and register callback handler
 
-        loop_rate.sleep();
+        //loop_rate.sleep();
 
-        //ac.waitForResult(); // wait for goal result
+        ac.waitForResult(); // wait for goal result
 
         if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
             ROS_INFO("The base moved to %d goal", i);

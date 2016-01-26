@@ -1,0 +1,36 @@
+--------------------- Drive round ---------------------
+
+1. Start RVIZ
+roslaunch tas rviz.launch
+
+2. Start map recording
+roslaunch tas run_rec.launch
+
+3. Save record
+rosrun map_server map_saver -f ~/catkin_ws/src/tas_car/tas/launch/config/map_server/map /hector_map:=/map2d
+
+4. Kill processes except of 1.
+
+5. Prepare round: Load map, etc.
+roslaunch tas run.launch
+
+6. Monte Carlo Localization
+roslaunch initial_localization init_localization.launch 
+
+7. Start round
+rosrun simple_navigation_goals simple_navigation_goals_node
+
+
+
+--------------------- Slalom ---------------------
+
+1. Start RVIZ
+roslaunch tas rviz.launch
+
+2. Prepare slalom: Load map, etc.
+roslaunch tas slalom.launch
+
+3. Start slalom
+rosrun slalom slalom_node
+
+

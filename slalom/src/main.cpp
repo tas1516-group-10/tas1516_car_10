@@ -1,5 +1,7 @@
 /**
- * This node sends fixed goals to move base via ROS Action API and receives feedback via callback functions.
+ * File to execute slalom course.
+ * 
+ * Authors: Christian Pfaffenzeller, Fabian Colapietro
  */
 
 #include <iostream>
@@ -81,19 +83,6 @@ int main(int argc, char** argv){
     waypoint4.orientation.z = 0.0172731922709;
     waypoint4.orientation.w = 0.999850807285;
     waypoints.push_back(waypoint4);
-
-
-
-
-//    geometry_msgs::Pose waypoint5;
-//    waypoint5.position.x = 8.07503700256;
-//    waypoint5.position.y = 0.0767859816551;
-//    waypoint5.position.z = 0.000;
-//    waypoint5.orientation.x = 0.000;
-//    waypoint5.orientation.y = 0.000;
-//    waypoint5.orientation.z = 0.102819700575;
-//    waypoint5.orientation.w = 0.994700009638;
-//    waypoints.push_back(waypoint5);
 
 
 

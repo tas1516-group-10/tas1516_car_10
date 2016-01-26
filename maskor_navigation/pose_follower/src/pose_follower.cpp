@@ -1,5 +1,7 @@
 /*********************************************************************
 *
+* TASGroup 10: File modified by Christian Pfaffenzeller and Fabian Colapietro
+* 
 * Software License Agreement (BSD License)
 *
 *  Copyright (c) 2009, Willow Garage, Inc.
@@ -33,6 +35,7 @@
 *  POSSIBILITY OF SUCH DAMAGE.
 *
 * Author: Eitan Marder-Eppstein
+* 
 *********************************************************************/
 #include <pose_follower/pose_follower.h>
 #include <pluginlib/class_list_macros.h>
@@ -53,7 +56,8 @@ namespace pose_follower {
 
     node_private.param("k_trans", K_trans_, 3.0);
     node_private.param("k_rot", K_rot_, 3.0);
-
+    
+    //----------------- Paramter modified ----------------------------
     node_private.param("tolerance_trans", tolerance_trans_, 0.35);	// War 0.3 geändert 20.1. CPF
     node_private.param("tolerance_rot", tolerance_rot_, 1.50);		// War 0.3 geändert 20.1. CPF
     node_private.param("tolerance_timeout", tolerance_timeout_, 1.5);
@@ -271,15 +275,17 @@ namespace pose_follower {
     double yaw_diff = headingDiff(pose1.getOrigin().x(), pose1.getOrigin().y(), 
         pose2.getOrigin().x(), pose2.getOrigin().y(), tf::getYaw(pose2.getRotation()));
 
+    
+    //---------------Modified----------------------
     //we'll also check if we can move more effectively backwards
-    double neg_yaw_diff = headingDiff(pose1.getOrigin().x(), pose1.getOrigin().y(), 
-        pose2.getOrigin().x(), pose2.getOrigin().y(), M_PI + tf::getYaw(pose2.getRotation()));
+    //double neg_yaw_diff = headingDiff(pose1.getOrigin().x(), pose1.getOrigin().y(), 
+       // pose2.getOrigin().x(), pose2.getOrigin().y(), M_PI + tf::getYaw(pose2.getRotation()));
 
     //check if its faster to just back up
-    if(fabs(neg_yaw_diff) < fabs(yaw_diff)){
-      ROS_DEBUG("Negative is better: %.2f", neg_yaw_diff);
-      yaw_diff = neg_yaw_diff;
-    }
+//     if(fabs(neg_yaw_diff) < fabs(yaw_diff)){
+//       ROS_DEBUG("Negative is better: %.2f", neg_yaw_diff);
+//       yaw_diff = neg_yaw_diff;
+//     }
 
     //compute the desired quaterion
     tf::Quaternion rot_diff = tf::createQuaternionFromYaw(yaw_diff);

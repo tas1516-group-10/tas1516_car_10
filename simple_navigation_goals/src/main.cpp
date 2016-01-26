@@ -1,5 +1,7 @@
 /**
- * This node sends fixed goals to move base via ROS Action API and receives feedback via callback functions.
+ * File to load waypoints for round on LSR 3. floor.
+ * 
+ * authors: Fabian Colapietro, Christian Pfaffenzeller, Peter Leidl, Dominik Mücke
  */
 
 #include <iostream>

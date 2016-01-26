@@ -67,7 +67,7 @@
 
   </node>
 
-  <!-- Original Move Base-->
+  <!-- SBPL Lattice Planner integrated by Christian Pfaffenzeller and Fabian Colapietro-->
   
   <node ns="local_costmap" name="voxel_grid_throttle" pkg="topic_tools" type="throttle" args="messages voxel_grid 3.0 voxel_grid_throttled" />
   <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
@@ -89,7 +89,7 @@
 
 
 
-
+ <!-- Original Move Base-->
 <!--
 <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen">
     <rosparam file="$(find tas)/launch/config/move_base/costmap_common_params.yaml" command="load" ns="global_costmap" />

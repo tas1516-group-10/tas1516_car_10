@@ -75,12 +75,12 @@ int main(int argc, char** argv)
                 if(check_dist == 0)
                 {
                     ROS_INFO("Distance more than 2 meters in front of the car!");
-                    autonomous_control.control_servo.x = 1550;
+                    autonomous_control.control_servo.x = 1560;
                 }
                 else if(check_dist == 1)
                 {
                     ROS_INFO("Distance between 1 and 2 meters in front of the car!");
-                    autonomous_control.control_servo.x = 1545;
+                    autonomous_control.control_servo.x = 1550;
                 }
                 else if(check_dist == 2)
                 {
